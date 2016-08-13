@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+   android:background="#f1ffffff"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#7694a3"/>
+
+   <GridLayout
+       android:layout_marginTop="20dp"
+       android:layout_width="320dp"
+       android:layout_height="320dp"
+       android:id="@+id/main_game"
+       android:columnCount="3"
+       android:rowCount="3">
+   </GridLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+        <Button
+            android:background="@drawable/ciclerbutton"
+            android:text="Return"
+            android:id="@+id/return_a"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+       <Chronometer
+           android:id="@+id/chronometer"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:format="%s"
+           android:textSize="80px"
+           android:textColor="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"/>
+</LinearLayout>
+</LinearLayout>
